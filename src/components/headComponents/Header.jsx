@@ -1,6 +1,9 @@
 import React from "react";
 import { Avatar, Stack, Typography, Box } from "@mui/material";
-import { HeaderCallIcon, VerticalDotsIcon } from "../assets/icons/HeaderIcons";
+import {
+  HeaderCallIcon,
+  VerticalDotsIcon,
+} from "../../assets/icons/HeaderIcons";
 
 const Header = () => {
   return (

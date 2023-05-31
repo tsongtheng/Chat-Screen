@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import ScreenData from "./api/ScreenData";
-import { Box } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import StatusBar from "./components/StatusBar";
-import PageActions from "./components/PageActions";
-import Header from "./components/Header";
+import HeadSection from "./components/headComponents/HeadSection";
+import CurrentDate from "./components/CurrentDate";
 
 function App() {
   const [screenData, setScreenData] = useState("");
@@ -33,8 +33,9 @@ function App() {
         sx={{ backgroundColor: "#FAF9F4" }}
       >
         <StatusBar />
-        <PageActions />
-        <Header />
+
+        <HeadSection />
+        <CurrentDate />
       </Box>
     </Box>
   );

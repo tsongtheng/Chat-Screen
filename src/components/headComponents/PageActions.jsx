@@ -3,7 +3,7 @@ import { Stack, Typography, Box } from "@mui/material";
 import {
   BackButtonIcon,
   EditButtonIcon,
-} from "../assets/icons/PageActionsIcons";
+} from "../../assets/icons/PageActionsIcons";
 
 const PageActions = () => {
   return (
