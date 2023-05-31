@@ -16,6 +16,7 @@ const StatusBar = () => {
     <Stack
       flexDirection={"row"}
       justifyContent={"space-between"}
+      alignItems={"center"}
       width={"100%"}
       height={"47px"}
       marginBottom={"20px"}

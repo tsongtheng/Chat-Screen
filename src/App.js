@@ -3,6 +3,7 @@ import ScreenData from "./api/ScreenData";
 import { Box } from "@mui/material";
 import StatusBar from "./components/StatusBar";
 import PageActions from "./components/PageActions";
+import Header from "./components/Header";
 
 function App() {
   const [screenData, setScreenData] = useState("");
@@ -33,6 +34,7 @@ function App() {
       >
         <StatusBar />
         <PageActions />
+        <Header />
       </Box>
     </Box>
   );
