@@ -18,6 +18,7 @@ const StatusBar = () => {
       justifyContent={"space-between"}
       width={"100%"}
       height={"47px"}
+      marginBottom={"20px"}
     >
       <Typography
         width={54}

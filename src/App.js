@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ScreenData from "./api/ScreenData";
 import { Box } from "@mui/material";
 import StatusBar from "./components/StatusBar";
+import PageActions from "./components/PageActions";
 
 function App() {
   const [screenData, setScreenData] = useState("");
@@ -31,6 +32,7 @@ function App() {
         sx={{ backgroundColor: "#FAF9F4" }}
       >
         <StatusBar />
+        <PageActions />
       </Box>
     </Box>
   );
