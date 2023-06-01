@@ -1,3 +1,17 @@
+const CaretIcon = () => {
+  return (
+    <svg
+      width="2"
+      height="10"
+      viewBox="0 0 2 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0.162 10V0.129999H1.618V10H0.162Z" fill="#141E0D" />
+    </svg>
+  );
+};
+
 const PaperClipIcon = () => {
   return (
     <svg
@@ -38,4 +52,4 @@ const SendIcon = () => {
   );
 };
 
-export { PaperClipIcon, SendIcon };
+export { CaretIcon, PaperClipIcon, SendIcon };

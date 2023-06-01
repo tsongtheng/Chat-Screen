@@ -15,7 +15,7 @@ const User = () => {
             backgroundColor: "#1C63D5",
             padding: "8px",
             borderRadius: "12px 12px 0 12px",
-            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.08)",
+            boxShadow: "none",
           }}
         >
           <ListItemText
