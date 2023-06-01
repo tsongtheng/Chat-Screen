@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Button, TextField } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Button } from "@mui/material";
 import {
   CaretIcon,
   PaperClipIcon,
@@ -9,6 +9,12 @@ import CustomizedInputsStyleOverrides from "../../style/InputBarTextField/InputB
 import AttachmentPanel from "./AttachmentPanel";
 
 const InputBar = () => {
+  const [panel, setPanel] = useState(false);
+
+  const handlePanelClick = () => {
+    setPanel((prevState) => !prevState);
+  };
+
   return (
     <Box
       display={"flex"}
@@ -25,7 +31,7 @@ const InputBar = () => {
         // backgroundColor: "black",
       }}
     >
-      <AttachmentPanel />
+      {panel && <AttachmentPanel />}
       <Box
         display={"flex"}
         justifyContent={"center"}
@@ -38,6 +44,7 @@ const InputBar = () => {
       </Box>
       <CustomizedInputsStyleOverrides />
       <Button
+        onClick={handlePanelClick}
         disableRipple
         sx={{
           minWidth: "20px",
