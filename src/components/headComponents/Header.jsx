@@ -1,18 +1,18 @@
 import React from "react";
-import { Avatar, Stack, Typography, Box } from "@mui/material";
+import { Avatar, Stack, Typography, Box, Button } from "@mui/material";
 import {
   HeaderCallIcon,
   VerticalDotsIcon,
 } from "../../assets/icons/HeaderIcons";
 
-const Header = () => {
+const Header = ({ menuClick }) => {
   return (
     <Stack
       flexDirection={"row"}
       alignItems={"center"}
       width={343}
       height={48}
-      margin={"0 auto 16px"}
+      margin={"0 auto 18px"}
     >
       <Box width={48} height={48} marginRight={"16px"}>
         <Avatar>TS</Avatar>
@@ -65,42 +65,32 @@ const Header = () => {
           </Typography>
         </Stack>
       </Stack>
-      <Box width={"24px"} height={"24px"} marginRight={"12px"}>
+
+      <Button
+        disableRipple
+        sx={{
+          minWidth: "24px",
+          height: "24px",
+          marginRight: "12px",
+          padding: 0,
+        }}
+      >
         <HeaderCallIcon />
-      </Box>
-      <Box width={"24px"} height={"24px"}>
+      </Button>
+
+      <Button
+        onClick={menuClick}
+        disableRipple
+        sx={{
+          minWidth: "24px",
+          height: "24px",
+          padding: 0,
+        }}
+      >
         <VerticalDotsIcon />
-      </Box>
+      </Button>
     </Stack>
   );
 };
 
 export default Header;
-
-// font-family: Mulish;
-// font-size: 18px;
-// font-weight: 600;
-// line-height: 23px;
-// letter-spacing: 0em;
-// text-align: left;
-
-// font-family: Mulish;
-// font-size: 18px;
-// font-weight: 700;
-// line-height: 23px;
-// letter-spacing: 0em;
-// text-align: left;
-
-// font-family: Mulish;
-// font-size: 16px;
-// font-weight: 500;
-// line-height: 20px;
-// letter-spacing: 0em;
-// text-align: left;
-
-// font-family: Inter;
-// font-size: 20px;
-// font-weight: 600;
-// line-height: 24px;
-// letter-spacing: 0em;
-// text-align: left;

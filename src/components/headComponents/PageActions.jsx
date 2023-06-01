@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Typography, Box } from "@mui/material";
+import { Stack, Typography, Box, Button } from "@mui/material";
 import {
   BackButtonIcon,
   EditButtonIcon,
@@ -15,9 +15,22 @@ const PageActions = () => {
       height={30}
       margin={"0 auto 16px"}
     >
-      <BackButtonIcon />
+      <Button
+        disableRipple
+        sx={{
+          minWidth: "24px",
+          height: "24px",
+          margin: "3px 0 3px",
+          // margin: "3px 12px 3px 0",
+          padding: 0,
+        }}
+      >
+        <BackButtonIcon />
+      </Button>
+
       <Typography
-        width={275}
+        minWidth={275}
+        height={30}
         fontFamily="inherit"
         fontStyle={"normal"}
         fontWeight={700}
@@ -28,7 +41,18 @@ const PageActions = () => {
       >
         Trip 1
       </Typography>
-      <EditButtonIcon />
+
+      <Button
+        disableRipple
+        sx={{
+          minWidth: "20px",
+          height: "20px",
+          margin: 0,
+          padding: 0,
+        }}
+      >
+        <EditButtonIcon />
+      </Button>
     </Stack>
   );
 };

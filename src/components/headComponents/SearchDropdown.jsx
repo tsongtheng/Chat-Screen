@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Typography, Box } from "@mui/material";
+import { Stack, Typography, Box, Button } from "@mui/material";
 
 import {
   MembersIcon,
@@ -21,12 +21,11 @@ const SearchDropdown = () => {
       width={"156px"}
       height={"144px"}
       borderRadius={"8px"}
-      margin={"0px 16px 515px 203px"}
-      sx={{
-        position: "absolute",
-        zIndex: "tooltip",
-        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.12)",
-      }}
+      position={"absolute"}
+      right={15}
+      top={105}
+      zIndex={800}
+      sx={{ boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.12)" }}
     >
       {arr.map(({ id, icon, item }) => (
         <Stack
@@ -37,7 +36,6 @@ const SearchDropdown = () => {
           height={"48px"}
           border={"1px solid"}
           borderColor={"#E5E5E0"}
-          // borderRadius={"8px"}
           sx={{
             backgroundColor: "#ffffff",
             borderTop: id === 2 ? 0 : id === 3 ? 0 : "1px",
