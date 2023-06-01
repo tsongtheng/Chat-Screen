@@ -5,7 +5,7 @@ import {
   MembersIcon,
   CallIcon,
   ReportMessageIcon,
-} from "../../../src/assets/icons/SearchDropdownIcons";
+} from "../../assets/icons/SearchDropdownIcons";
 
 const arr = [
   { id: 1, icon: <MembersIcon />, item: "Members" },

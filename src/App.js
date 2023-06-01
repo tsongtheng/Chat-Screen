@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import StatusBar from "./components/StatusBar/StatusBar";
 import HeadSection from "./components/headComponents/HeadSection";
 import CurrentDate from "./components/CurrentDate/CurrentDate";
-// import SearchDropdown from "./components/SearchDropdown/SearchDropdown";
 import ChatMessage from "./components/ChatContent/ChatMessage";
 import InputBar from "./components/InputBar/InputBar";
 
@@ -25,7 +24,6 @@ function App() {
         <StatusBar />
         <HeadSection />
         <CurrentDate />
-        {/* <SearchDropdown /> */}
         <ChatMessage />
         <InputBar />
       </Box>

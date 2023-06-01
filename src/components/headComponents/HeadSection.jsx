@@ -2,6 +2,7 @@ import React from "react";
 import { Stack } from "@mui/material";
 import PageActions from "./PageActions";
 import Header from "./Header";
+import SearchDropdown from "./SearchDropdown";
 
 const HeadSection = () => {
   return (
@@ -14,6 +15,7 @@ const HeadSection = () => {
     >
       <PageActions />
       <Header />
+      <SearchDropdown />
     </Stack>
   );
 };

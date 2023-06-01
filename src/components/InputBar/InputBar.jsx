@@ -6,6 +6,7 @@ import {
   SendIcon,
 } from "../../assets/icons/InputBarIcons";
 import CustomizedInputsStyleOverrides from "../../style/InputBarTextField/InputBarTextField";
+import AttachmentPanel from "./AttachmentPanel";
 
 const InputBar = () => {
   return (
@@ -18,11 +19,13 @@ const InputBar = () => {
       margin={"0 16px 51px"}
       padding={"11px 12px"}
       borderRadius={"8px"}
+      position={"relative"}
       sx={{
         backgroundColor: "#FFFFFF",
-        // backgroundColor: "yellow",
+        // backgroundColor: "black",
       }}
     >
+      <AttachmentPanel />
       <Box
         display={"flex"}
         justifyContent={"center"}
@@ -34,7 +37,6 @@ const InputBar = () => {
         <CaretIcon />
       </Box>
       <CustomizedInputsStyleOverrides />
-
       <Button
         disableRipple
         sx={{
@@ -51,7 +53,7 @@ const InputBar = () => {
         sx={{
           minWidth: "20px",
           height: "20px",
-          margin: "11px 12px 11px 0",
+          margin: "11px 0 11px",
           padding: 0,
         }}
       >
