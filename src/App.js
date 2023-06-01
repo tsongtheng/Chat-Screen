@@ -1,22 +1,11 @@
-import { useEffect, useState } from "react";
-import ScreenData from "./api/ScreenData";
-import { Box, Divider } from "@mui/material";
-import StatusBar from "./components/StatusBar";
+import { Box } from "@mui/material";
+import StatusBar from "./components/StatusBar/StatusBar";
 import HeadSection from "./components/headComponents/HeadSection";
-import CurrentDate from "./components/CurrentDate";
+import CurrentDate from "./components/CurrentDate/CurrentDate";
+// import SearchDropdown from "./components/SearchDropdown/SearchDropdown";
+import ChatMessage from "./components/ChatContent/ChatMessage";
 
 function App() {
-  const [screenData, setScreenData] = useState("");
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await ScreenData();
-      console.log(data);
-      console.log(data?.data);
-    };
-    // fetchData();
-  }, []);
-
   return (
     <Box
       display={"flex"}
@@ -33,9 +22,10 @@ function App() {
         sx={{ backgroundColor: "#FAF9F4" }}
       >
         <StatusBar />
-
         <HeadSection />
         <CurrentDate />
+        {/* <SearchDropdown /> */}
+        <ChatMessage />
       </Box>
     </Box>
   );

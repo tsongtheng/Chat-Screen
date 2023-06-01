@@ -27,7 +27,7 @@ const CurrentDate = () => {
         variant="middle"
         width="116px"
         sx={{
-          backgroundColor: "#B7B7B7",
+          color: "#B7B7B7",
           margin: "8.5px 12px 8.5px 0",
           borderWidth: "1px",
           borderRadius: "1px",
@@ -51,7 +51,7 @@ const CurrentDate = () => {
         variant="middle"
         width="116px"
         sx={{
-          backgroundColor: "#B7B7B7",
+          color: "#B7B7B7",
           margin: "8.5px 0 8.5px 12px",
           borderWidth: "1px",
           borderRadius: "1px",

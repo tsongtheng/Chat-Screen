@@ -4,7 +4,7 @@ import {
   BatteryIcon,
   SignalIcon,
   WifiIcon,
-} from "../assets/icons/StatusBarIcons";
+} from "../../assets/icons/StatusBarIcons";
 
 const StatusBar = () => {
   const getTime = new Date();
