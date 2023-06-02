@@ -1,6 +1,9 @@
 import React from "react";
 import { Box, List, ListItem, ListItemText } from "@mui/material";
 
+const userMessage =
+  "Connect with fellow travelers, share the ride and save money Connect with fellow travelers, share the ride and save money";
+
 const User = ({ message }) => {
   return (
     <Box width={319} margin={"0 0 20px 52px"}>
@@ -17,7 +20,7 @@ const User = ({ message }) => {
         >
           <ListItemText
             disableTypography
-            primary={message}
+            primary={message ? message : userMessage}
             sx={{
               fontFamily: "inherit",
               fontStyle: "normal",
@@ -29,7 +32,6 @@ const User = ({ message }) => {
 
               color: "#ffffff",
             }}
-            // secondary={messageSecondary}
           />
         </ListItem>
       </List>

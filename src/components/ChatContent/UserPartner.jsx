@@ -8,7 +8,10 @@ import {
   ListItemText,
 } from "@mui/material";
 
-const UserPartner = ({ message }) => {
+const userMessage =
+  "Connect with fellow travelers, share the ride and save money Connect with fellow travelers, share the ride and save money";
+
+const UserPartner = ({ message, image }) => {
   return (
     <Box width={319} margin={"0 20px 20px 0"}>
       <List
@@ -17,7 +20,7 @@ const UserPartner = ({ message }) => {
       >
         <ListItem disablePadding sx={{ width: "24px", height: "24px" }}>
           <ListItemAvatar sx={{ width: "24px", height: "24px" }}>
-            G
+            <Avatar alt="Sharp" src={image} sx={{ width: 24, height: 24 }} />
           </ListItemAvatar>
         </ListItem>
         <ListItem
@@ -32,7 +35,7 @@ const UserPartner = ({ message }) => {
         >
           <ListItemText
             disableTypography
-            primary={message}
+            primary={message ? message : userMessage}
             sx={{
               fontFamily: "inherit",
               fontStyle: "normal",

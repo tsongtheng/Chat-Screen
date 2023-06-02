@@ -22,7 +22,7 @@ const InputBar = () => {
       alignItems={"center"}
       width={343}
       height={42}
-      margin={"0 16px 51px"}
+      margin={"0 16px 43px"}
       padding={"11px 12px"}
       borderRadius={"8px"}
       position={"relative"}

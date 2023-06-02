@@ -18,6 +18,8 @@ const ChatMessage = () => {
 
   return (
     <Box
+      display={"flex"}
+      flexDirection={"column-reverse"}
       width={"339px"}
       height={"372px"}
       margin={"0 20px 20px 16px"}
@@ -45,14 +47,20 @@ const ChatMessage = () => {
         // scrollbarGutter: "auto",
       }}
     >
+      <UserPartner />
+      <UserPartner />
+      <User />
+      <UserPartner />
       {chats.map((chat) => {
-        return (
-          chat.self && <UserPartner key={chat.id} message={chat.message} />
+        return !chat.self ? (
+          <UserPartner
+            key={chat.id}
+            message={chat.message}
+            image={chat.image}
+          />
+        ) : (
+          <User key={chat.id} message={chat.message} />
         );
-      })}
-
-      {chats.map((chat) => {
-        return chat.self && <User key={chat.id} message={chat.message} />;
       })}
     </Box>
   );

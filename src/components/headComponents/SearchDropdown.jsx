@@ -23,7 +23,7 @@ const SearchDropdown = () => {
       borderRadius={"8px"}
       position={"absolute"}
       right={15}
-      top={105}
+      top={90}
       zIndex={800}
       sx={{ boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.12)" }}
     >

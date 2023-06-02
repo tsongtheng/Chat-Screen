@@ -4,6 +4,7 @@ import HeadSection from "./components/headComponents/HeadSection";
 import CurrentDate from "./components/CurrentDate/CurrentDate";
 import ChatMessage from "./components/ChatContent/ChatMessage";
 import InputBar from "./components/InputBar/InputBar";
+import HomeIndicator from "./components/HomeIndicator/HomeIndicator";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <CurrentDate />
         <ChatMessage />
         <InputBar />
+        <HomeIndicator />
       </Box>
     </Box>
   );

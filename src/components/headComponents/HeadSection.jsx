@@ -14,7 +14,7 @@ const HeadSection = () => {
     <Stack
       justifyContent={"space-between"}
       width={"375px"}
-      minHeight={"130px"}
+      // minHeight={"130px"}
       borderBottom={"1px solid"}
       borderColor={"#E5E5E0"}
       position={"relative"}
