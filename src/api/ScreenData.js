@@ -1,14 +1,38 @@
 import axios from "axios";
 
-const URL = "http://3.111.128.67/assignment/chat?page=0";
+const URL = "https://qa.corider.in/assignment/chat?page=0";
 
-const ScreenData = async () => {
+const getData = async () => {
   try {
     const response = await axios.get(URL);
-    return response;
-  } catch (error) {
-    console.log(error);
+    return response.data;
+  } catch (err) {
+    console.error("Error fetching the data", err);
   }
 };
 
-export default ScreenData;
+const formatChatsData = (data) => {
+  let { chats } = data;
+  const userChats = chats.map((obj) => {
+    const senderObj = obj.sender;
+    const { image, is_kyc_verified, self, user_id } = senderObj;
+    return {
+      id: obj.id,
+      message: obj.message,
+      time: obj.time,
+      image,
+      is_kyc_verified,
+      self,
+      user_id,
+    };
+  });
+  return userChats;
+};
+
+const getFormattedData = async () => {
+  const chatsData = await getData();
+  const formattedChatsData = formatChatsData(chatsData);
+  return formattedChatsData;
+};
+
+export { getFormattedData };

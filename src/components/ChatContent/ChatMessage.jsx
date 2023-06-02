@@ -1,20 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 import User from "./User";
 import UserPartner from "./UserPartner";
-// import ScreenData from "../../../api/screenData";
-import ScreenData from "../../api/ScreenData";
+import { getFormattedData } from "../../api/ScreenData";
 
 const ChatMessage = () => {
-  const [screenData, setScreenData] = useState("");
+  // const [screenData, setScreenData] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await ScreenData();
+      const data = await getFormattedData();
       console.log(data);
-      console.log(data?.data);
+      return data;
     };
-    // fetchData();
+    fetchData();
   }, []);
 
   return (
