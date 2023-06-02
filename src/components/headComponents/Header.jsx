@@ -1,9 +1,10 @@
 import React from "react";
-import { Avatar, Stack, Typography, Box, Button, Modal } from "@mui/material";
+import { Stack, Typography, Box, Button } from "@mui/material";
 import {
   HeaderCallIcon,
   VerticalDotsIcon,
 } from "../../assets/icons/HeaderIcons";
+import ProfileAvatar from "../../assets/Avatar/ProfileAvatar";
 
 const Header = ({ menuClick }) => {
   return (
@@ -15,7 +16,7 @@ const Header = ({ menuClick }) => {
       margin={"0 auto 18px"}
     >
       <Box width={48} height={48} marginRight={"16px"}>
-        <Avatar>TS</Avatar>
+        <ProfileAvatar />
       </Box>
 
       <Stack

@@ -42,9 +42,6 @@ const ChatMessage = () => {
         "&::-webkit-scrollbar-thumb:hover": {
           background: "transparent",
         },
-
-        // scrollBehavior: "auto",
-        // scrollbarGutter: "auto",
       }}
     >
       <UserPartner />
@@ -55,8 +52,8 @@ const ChatMessage = () => {
         return !chat.self ? (
           <UserPartner
             key={chat.id}
-            message={chat.message}
             image={chat.image}
+            message={chat.message}
           />
         ) : (
           <User key={chat.id} message={chat.message} />

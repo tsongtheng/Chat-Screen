@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Typography, Box, Button } from "@mui/material";
+import { Stack, Typography, Box } from "@mui/material";
 
 import {
   MembersIcon,

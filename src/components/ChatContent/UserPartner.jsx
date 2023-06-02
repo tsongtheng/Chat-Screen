@@ -7,7 +7,7 @@ import {
   ListItemAvatar,
   ListItemText,
 } from "@mui/material";
-
+import ChatHeadAvatar from "../../assets/Avatar/ChatHeadAvatar";
 const userMessage =
   "Connect with fellow travelers, share the ride and save money Connect with fellow travelers, share the ride and save money";
 
@@ -20,7 +20,11 @@ const UserPartner = ({ message, image }) => {
       >
         <ListItem disablePadding sx={{ width: "24px", height: "24px" }}>
           <ListItemAvatar sx={{ width: "24px", height: "24px" }}>
-            <Avatar alt="Sharp" src={image} sx={{ width: 24, height: 24 }} />
+            {image ? (
+              <Avatar alt="Sharp" src={image} sx={{ width: 24, height: 24 }} />
+            ) : (
+              <ChatHeadAvatar />
+            )}
           </ListItemAvatar>
         </ListItem>
         <ListItem
@@ -44,6 +48,7 @@ const UserPartner = ({ message, image }) => {
               lineHeight: "18px",
               letterSpacing: 0,
               gap: "8px",
+              margin: 0,
 
               color: "#606060",
             }}

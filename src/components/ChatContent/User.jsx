@@ -29,7 +29,7 @@ const User = ({ message }) => {
               lineHeight: "18px",
               letterSpacing: 0,
               gap: "8px",
-
+              margin: 0,
               color: "#ffffff",
             }}
           />
