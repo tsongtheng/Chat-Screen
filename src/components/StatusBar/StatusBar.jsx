@@ -25,6 +25,7 @@ const StatusBar = () => {
         width={54}
         height={21}
         margin={"14px 0 11px 27px"}
+        fontFamily={"SF Pro Text,sans-serif"}
         fontStyle={"normal"}
         fontWeight={600}
         fontSize={17}
