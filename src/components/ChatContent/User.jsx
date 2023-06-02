@@ -1,10 +1,7 @@
 import React from "react";
 import { Box, List, ListItem, ListItemText } from "@mui/material";
 
-const message =
-  "Connect with fellow travelers, share the ride and save money Connect with fellow travelers, share the ride and save money";
-
-const User = () => {
+const User = ({ message }) => {
   return (
     <Box width={319} margin={"0 0 20px 52px"}>
       <List disablePadding>

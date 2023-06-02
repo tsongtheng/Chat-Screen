@@ -8,9 +8,7 @@ import {
   ListItemText,
 } from "@mui/material";
 
-const message =
-  "Connect with fellow travelers, share the ride and save money Connect with fellow travelers, share the ride and save money";
-const UserPartner = () => {
+const UserPartner = ({ message }) => {
   return (
     <Box width={319} margin={"0 20px 20px 0"}>
       <List
