@@ -44,10 +44,10 @@ const ChatMessage = () => {
         },
       }}
     >
-      <UserPartner />
-      <UserPartner />
+      <UserPartner imgKey={3} />
+      <UserPartner imgKey={2} />
       <User />
-      <UserPartner />
+      <UserPartner imgKey={1} />
       {chats.map((chat) => {
         return !chat.self ? (
           <UserPartner
