@@ -13,7 +13,7 @@ const ProfileAvatar = () => {
       <Avatar
         alt="profile-img"
         src={ProfileImg1}
-        sx={{ width: 48, height: 48 }}
+        sx={{ width: "4.8rem", height: "4.8rem" }}
       />
     </>
   );

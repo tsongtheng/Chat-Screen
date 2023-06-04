@@ -1,8 +1,8 @@
 const CameraIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="2rem"
+      height="2rem"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -28,8 +28,8 @@ const CameraIcon = () => {
 const VideoIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="2rem"
+      height="2rem"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -54,8 +54,8 @@ const VideoIcon = () => {
 const DocumentIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="2rem"
+      height="2rem"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -74,8 +74,8 @@ const DocumentIcon = () => {
 const CornerIcon = () => {
   return (
     <svg
-      width="16"
-      height="8"
+      width="1.6rem"
+      height=".8rem"
       viewBox="0 0 16 8"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

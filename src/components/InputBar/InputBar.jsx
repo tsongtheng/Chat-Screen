@@ -20,11 +20,11 @@ const InputBar = () => {
       display={"flex"}
       flexDirection={"row"}
       alignItems={"center"}
-      width={343}
-      height={42}
-      margin={"0 16px 43px"}
-      padding={"11px 12px"}
-      borderRadius={"8px"}
+      width={"34.3rem"}
+      height={"4.2rem"}
+      margin={"0 1.6rem 5.1rem"}
+      padding={"1.1rem 1.2rem"}
+      borderRadius={".8rem"}
       position={"relative"}
       sx={{
         backgroundColor: "#FFFFFF",
@@ -36,9 +36,9 @@ const InputBar = () => {
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
-        minWidth={4}
-        height={18}
-        margin={"12px 0 12px 0"}
+        minWidth={".4rem"}
+        height={"1.8rem"}
+        margin={"1.2rem 0 1.2rem 0"}
       >
         <CaretIcon />
       </Box>
@@ -47,9 +47,9 @@ const InputBar = () => {
         onClick={handlePanelClick}
         disableRipple
         sx={{
-          minWidth: "20px",
-          height: "20px",
-          margin: "11px 16px 11px 0",
+          minWidth: "2rem",
+          height: "2rem",
+          margin: "1.1rem 1.6rem 1.1rem 0",
           padding: 0,
         }}
       >
@@ -58,9 +58,9 @@ const InputBar = () => {
       <Button
         disableRipple
         sx={{
-          minWidth: "20px",
-          height: "20px",
-          margin: "11px 0 11px",
+          minWidth: "2rem",
+          height: "2rem",
+          margin: "1.1rem 0 1.1rem",
           padding: 0,
         }}
       >

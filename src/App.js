@@ -17,9 +17,9 @@ function App() {
       sx={{ backgroundColor: "#1E1E1E" }}
     >
       <Box
-        width={"375px"}
-        height={"812px"}
-        borderRadius={"32px"}
+        width={"37.5rem"}
+        height={"81.2rem"}
+        borderRadius={"3.2rem"}
         sx={{ backgroundColor: "#FAF9F4" }}
       >
         <StatusBar />

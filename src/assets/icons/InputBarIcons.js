@@ -1,8 +1,8 @@
 const CaretIcon = () => {
   return (
     <svg
-      width="2"
-      height="10"
+      width=".2rem"
+      height="1rem"
       viewBox="0 0 2 10"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -15,8 +15,8 @@ const CaretIcon = () => {
 const PaperClipIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="2rem"
+      height="2rem"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -35,8 +35,8 @@ const PaperClipIcon = () => {
 const SendIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="2rem"
+      height="2rem"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

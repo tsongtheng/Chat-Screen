@@ -1,8 +1,8 @@
 const MembersIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="2rem"
+      height="2rem"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +21,8 @@ const MembersIcon = () => {
 const CallIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="2rem"
+      height="2rem"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,8 @@ const CallIcon = () => {
 const ReportMessageIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="2rem"
+      height="2rem"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

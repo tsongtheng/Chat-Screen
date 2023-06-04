@@ -11,16 +11,16 @@ const PageActions = () => {
       flexDirection={"row"}
       justifyContent={"space-between"}
       alignItems={"center"}
-      width={343}
-      height={30}
-      margin={"0 auto 16px"}
+      width={"34.3rem"}
+      height={"3rem"}
+      margin={"0 auto 1.6rem"}
     >
       <Button
         disableRipple
         sx={{
-          minWidth: "24px",
-          height: "24px",
-          margin: "3px 0 3px",
+          minWidth: "2.4rem",
+          height: "2.4rem",
+          margin: ".3rem 0 .3rem",
           // margin: "3px 12px 3px 0",
           padding: 0,
         }}
@@ -29,13 +29,13 @@ const PageActions = () => {
       </Button>
 
       <Typography
-        minWidth={275}
-        height={30}
+        minWidth={"27.5rem"}
+        height={"3rem"}
         fontFamily="inherit"
         fontStyle={"normal"}
         fontWeight={700}
-        fontSize={24}
-        lineHeight={"30px"}
+        fontSize={"2.4rem"}
+        lineHeight={"3rem"}
         letterSpacing={0}
         color={"#141E0D"}
       >
@@ -45,8 +45,8 @@ const PageActions = () => {
       <Button
         disableRipple
         sx={{
-          minWidth: "20px",
-          height: "20px",
+          minWidth: "2rem",
+          height: "2rem",
           margin: 0,
           padding: 0,
         }}

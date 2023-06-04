@@ -12,8 +12,8 @@ const icons = [<CameraIcon />, <VideoIcon />, <DocumentIcon />];
 const AttachmentPanel = () => {
   return (
     <Box
-      minWidth={"124px"}
-      height={"52px"}
+      minWidth={"12.4rem"}
+      height={"5.2rem"}
       position={"absolute"}
       zIndex={999}
       right={-5}
@@ -23,11 +23,11 @@ const AttachmentPanel = () => {
         display={"flex"}
         justifyContent={"space-between"}
         alignItems={"center"}
-        width={124}
-        height={44}
-        padding={"12px 16px"}
-        borderRadius={999}
-        boxShadow={"0px -1px 8px rgba(0, 0, 0, 0.05)"}
+        width={"12.4rem"}
+        height={"4.4rem"}
+        padding={"1.2rem 1.6rem"}
+        borderRadius={"99.9rem"}
+        boxShadow={"0 -0.1rem .8rem rgba(0, 0, 0, 0.05)"}
         sx={{ backgroundColor: "#008000" }}
       >
         {icons.map((icon, i) => (
@@ -35,8 +35,8 @@ const AttachmentPanel = () => {
             key={i}
             disableRipple
             sx={{
-              minWidth: "20px",
-              height: "20px",
+              minWidth: "2rem",
+              height: "2rem",
               padding: 0,
             }}
           >
@@ -47,8 +47,8 @@ const AttachmentPanel = () => {
       <Box
         display={"flex"}
         justifyContent={"center"}
-        minWidth={16}
-        minHeight={8}
+        minWidth={"1.6rem"}
+        minHeight={".8rem"}
       >
         <CornerIcon />
       </Box>

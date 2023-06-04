@@ -6,15 +6,16 @@ const userMessage =
 
 const User = ({ message }) => {
   return (
-    <Box width={319} margin={"0 0 20px 52px"}>
+    <Box width={"31.9rem"} margin={"0 .4rem 2rem 5.2rem"}>
       <List disablePadding>
         <ListItem
           disablePadding
           sx={{
-            width: "287px",
+            width: "28.7rem",
+            margin: 0,
             backgroundColor: "#1C63D5",
-            padding: "8px",
-            borderRadius: "12px 12px 0 12px",
+            padding: ".8rem",
+            borderRadius: "1.2rem 1.2rem 0 1.2rem",
             boxShadow: "none",
           }}
         >
@@ -25,10 +26,10 @@ const User = ({ message }) => {
               fontFamily: "inherit",
               fontStyle: "normal",
               fontWeight: 400,
-              fontSize: "14px",
-              lineHeight: "18px",
+              fontSize: "1.4rem",
+              lineHeight: "1.8rem",
               letterSpacing: 0,
-              gap: "8px",
+              gap: ".8rem",
               margin: 0,
               color: "#ffffff",
             }}

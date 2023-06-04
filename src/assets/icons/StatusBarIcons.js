@@ -1,8 +1,8 @@
 const SignalIcon = () => {
   return (
     <svg
-      width="19.2"
-      height="12"
+      width="1.92rem"
+      height="1.2rem"
       viewBox="0 0 20 13"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -20,8 +20,8 @@ const SignalIcon = () => {
 const WifiIcon = () => {
   return (
     <svg
-      width="17"
-      height="12"
+      width="1.7rem"
+      height="1.2rem"
       viewBox="0 0 18 13"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +39,8 @@ const WifiIcon = () => {
 const BatteryIcon = () => {
   return (
     <svg
-      width="27.33"
-      height="13"
+      width="2.733rem"
+      height="1.3rem"
       viewBox="0 0 28 13"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

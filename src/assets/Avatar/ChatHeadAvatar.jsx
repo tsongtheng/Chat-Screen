@@ -18,7 +18,7 @@ const ChatHeadAvatar = ({ imgKey }) => {
             ? ChatHeadImg2
             : ChatHeadImg3
         }
-        sx={{ width: 24, height: 24 }}
+        sx={{ width: "2.4rem", height: "2.4rem" }}
       />
     </>
   );

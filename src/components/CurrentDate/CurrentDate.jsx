@@ -1,4 +1,4 @@
-import { Divider, Stack, Typography } from "@mui/material";
+import { Divider, Box, Typography } from "@mui/material";
 import React from "react";
 
 const CurrentDate = () => {
@@ -16,48 +16,49 @@ const CurrentDate = () => {
   const CurrentDate = `${date} ${month}, ${year}`;
 
   return (
-    <Stack
-      width={"87px"}
-      height={"18px"}
-      flexDirection={"row"}
+    <Box
+      display={"flex"}
+      width={"34.3rem"}
+      height={"1.8rem"}
+      textAlign={"center"}
+      justifyContent={"space-between"}
       alignItems={"center"}
-      margin={"97px 16px 32px"}
+      margin={"0 1.6rem 3.2rem"}
     >
       <Divider
-        variant="middle"
-        width="116px"
+        variant="fullWidth"
         sx={{
+          width: "11.6rem",
           color: "#B7B7B7",
-          margin: "8.5px 12px 8.5px 0",
-          borderWidth: "1px",
-          borderRadius: "1px",
+          margin: 0,
+          borderWidth: ".1rem",
+          borderRadius: ".1rem",
         }}
       />
       <Typography
-        minWidth={"87px"}
-        height={"18px"}
+        width={"8.7rem"}
+        height={"1.8rem"}
         fontFamily="inherit"
         fontStyle={"normal"}
         fontWeight={400}
-        fontSize={"0.86rem"}
-        // fontSize={"0.875rem"}
-        lineHeight={"18px"}
+        fontSize={"1.4rem"}
+        lineHeight={"1.8rem"}
         letterSpacing={0}
         color={"#B7B7B7"}
       >
         {CurrentDate}
       </Typography>
       <Divider
-        variant="middle"
-        width="116px"
+        variant="fullWidth"
         sx={{
+          width: "11.6rem",
           color: "#B7B7B7",
-          margin: "8.5px 0 8.5px 12px",
-          borderWidth: "1px",
-          borderRadius: "1px",
+          margin: 0,
+          borderWidth: ".1rem",
+          borderRadius: ".1rem",
         }}
       />
-    </Stack>
+    </Box>
   );
 };
 

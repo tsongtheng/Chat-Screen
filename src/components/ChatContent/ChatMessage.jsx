@@ -20,9 +20,11 @@ const ChatMessage = () => {
     <Box
       display={"flex"}
       flexDirection={"column-reverse"}
-      width={"339px"}
-      height={"372px"}
-      margin={"0 20px 20px 16px"}
+      // justifyContent={"space-evenly"}
+      // gap={"2rem"}
+      width={"33.9rem"}
+      height={"36rem"}
+      margin={"0 1.6rem 2rem"}
       overflow={"hidden"}
       sx={{
         backgroundColor: "#FAF9F4",

@@ -11,10 +11,10 @@ const customTheme = (outerTheme) =>
       MuiTextField: {
         styleOverrides: {
           root: {
-            width: "243px",
-            height: "18px",
+            width: "24.3rem",
+            height: "1.8rem",
             border: "none",
-            marginRight: "16px",
+            marginRight: "1.6rem",
             boxSizing: "border-box",
             "--TextField-brandBorderColor": "#ffffff",
             "--TextField-brandBorderHoverColor": "#ffffff",
@@ -29,27 +29,27 @@ const customTheme = (outerTheme) =>
       MuiOutlinedInput: {
         styleOverrides: {
           input: {
-            width: "243px",
-            height: "18px",
+            width: "24.3rem",
+            height: "1.8rem",
             padding: 0,
             fontFamily: "Mulish",
             fontStyle: "normal",
             fontWeight: 400,
-            fontSize: "14px",
-            lineHeight: "18px",
+            fontSize: "1.4rem",
+            lineHeight: "1.8rem",
             letterSpacing: 0,
           },
 
           notchedOutline: {
-            width: "243px",
-            height: "18px",
+            width: "24.3rem",
+            height: "1.8rem",
             border: "none",
             boxSizing: "border-box",
             borderColor: "var(--TextField-brandBorderColor)",
           },
           root: {
-            width: "243px",
-            height: "18px",
+            width: "24.3rem",
+            height: "1.8rem",
             border: "none",
 
             boxSizing: "border-box",

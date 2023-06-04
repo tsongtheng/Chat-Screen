@@ -14,26 +14,30 @@ const userMessage =
 
 const UserPartner = ({ message, image, imgKey }) => {
   return (
-    <Box width={319} margin={"0 20px 20px 0"} position={"relative"}>
+    <Box width={"31.9rem"} margin={"0 2.4rem 2rem 0"} position={"relative"}>
       <List
         disablePadding
         sx={{ display: "flex", justifyContent: "space-between" }}
       >
-        <ListItem disablePadding sx={{ width: "24px", height: "24px" }}>
-          <ListItemAvatar sx={{ width: "24px", height: "24px" }}>
+        <ListItem disablePadding sx={{ width: "2.4rem", height: "2.4rem" }}>
+          <ListItemAvatar sx={{ width: "2.4rem", height: "2.4rem" }}>
             {image ? (
-              <Avatar alt="Sharp" src={image} sx={{ width: 24, height: 24 }} />
+              <Avatar
+                alt="Sharp"
+                src={image}
+                sx={{ width: "2.4rem", height: "2.4rem" }}
+              />
             ) : (
               <ChatHeadAvatar imgKey={imgKey} />
             )}
             <Box
-              width={8}
-              height={8}
+              width={".8rem"}
+              height={".8rem"}
               position={"absolute"}
               zIndex={100}
               // right={15}
               left={16}
-              top={8}
+              top={14}
             >
               <CheckedIcon />
             </Box>
@@ -42,11 +46,11 @@ const UserPartner = ({ message, image, imgKey }) => {
         <ListItem
           disablePadding
           sx={{
-            width: "287px",
+            width: "28.7rem",
             backgroundColor: "#ffffff",
-            padding: "8px",
-            borderRadius: "0 12px 12px 12px",
-            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.08)",
+            padding: ".8rem",
+            borderRadius: "0 1.2rem 1.2rem 1.2rem",
+            boxShadow: "0 .4rem .8rem rgba(0, 0, 0, 0.08)",
           }}
         >
           <ListItemText
@@ -56,10 +60,10 @@ const UserPartner = ({ message, image, imgKey }) => {
               fontFamily: "inherit",
               fontStyle: "normal",
               fontWeight: 400,
-              fontSize: "14px",
-              lineHeight: "18px",
+              fontSize: "1.4rem",
+              lineHeight: "1.8rem",
               letterSpacing: 0,
-              gap: "8px",
+              gap: ".8rem",
               margin: 0,
 
               color: "#606060",
