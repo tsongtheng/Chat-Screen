@@ -11,12 +11,11 @@ const PageActions = () => {
       flexDirection={"row"}
       justifyContent={"space-between"}
       alignItems={"center"}
-      width={"100vw"}
+      px={"1.6rem"}
       marginBottom={"1.6rem"}
-      px={"1.3rem"}
     >
       <Box display={"flex"} flexDirection={"row"} alignItems={"center"}>
-        <IconButton disableRipple>
+        <IconButton disableRipple sx={{ padding: 0, marginRight: "1rem" }}>
           <BackButtonIcon />
         </IconButton>
 
@@ -31,13 +30,7 @@ const PageActions = () => {
         </Typography>
       </Box>
 
-      <IconButton
-        disableRipple
-        sx={{
-          display: "flex",
-          alignItems: "flex-end",
-        }}
-      >
+      <IconButton disableRipple sx={{ padding: 0 }}>
         <EditButtonIcon />
       </IconButton>
     </Stack>

@@ -11,9 +11,8 @@ const customTheme = (outerTheme) =>
       MuiTextField: {
         styleOverrides: {
           root: {
-            width: "24.3rem",
-            height: "1.8rem",
             border: "none",
+            width: "90%",
             marginRight: "1.6rem",
             boxSizing: "border-box",
             "--TextField-brandBorderColor": "#ffffff",
@@ -29,8 +28,6 @@ const customTheme = (outerTheme) =>
       MuiOutlinedInput: {
         styleOverrides: {
           input: {
-            width: "24.3rem",
-            height: "1.8rem",
             padding: 0,
             fontFamily: "Mulish",
             fontStyle: "normal",
@@ -41,15 +38,11 @@ const customTheme = (outerTheme) =>
           },
 
           notchedOutline: {
-            width: "24.3rem",
-            height: "1.8rem",
             border: "none",
             boxSizing: "border-box",
             borderColor: "var(--TextField-brandBorderColor)",
           },
           root: {
-            width: "24.3rem",
-            height: "1.8rem",
             border: "none",
 
             boxSizing: "border-box",
@@ -71,7 +64,7 @@ const CustomizedInputsStyleOverrides = () => {
 
   return (
     <ThemeProvider theme={customTheme(outerTheme)}>
-      <TextField placeholder="Reply to @Rohit Yadav" />
+      <TextField placeholder="Message" />
     </ThemeProvider>
   );
 };

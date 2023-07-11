@@ -20,11 +20,9 @@ const ChatMessage = () => {
     <Box
       display={"flex"}
       flexDirection={"column-reverse"}
-      // justifyContent={"space-evenly"}
-      // gap={"2rem"}
-      width={"33.9rem"}
-      height={"36rem"}
-      margin={"0 1.6rem 2rem"}
+      // width={"33.9rem"}
+      // height={"36rem"}
+      padding={"0 1.6rem 2rem"}
       overflow={"hidden"}
       sx={{
         backgroundColor: "#FAF9F4",
@@ -46,10 +44,10 @@ const ChatMessage = () => {
         },
       }}
     >
-      <UserPartner imgKey={3} />
+      {/* <UserPartner imgKey={3} />
       <UserPartner imgKey={2} />
       <User />
-      <UserPartner imgKey={1} />
+      <UserPartner imgKey={1} /> */}
       {chats.map((chat) => {
         return !chat.self ? (
           <UserPartner

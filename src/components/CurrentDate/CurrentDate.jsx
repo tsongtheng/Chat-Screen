@@ -18,17 +18,16 @@ const CurrentDate = () => {
   return (
     <Box
       display={"flex"}
-      width={"34.3rem"}
-      height={"1.8rem"}
       textAlign={"center"}
       justifyContent={"space-between"}
       alignItems={"center"}
-      margin={"0 1.6rem 3.2rem"}
+      px={"1.6rem"}
+      marginBottom={"3.2rem"}
     >
       <Divider
         variant="fullWidth"
         sx={{
-          width: "11.6rem",
+          width: "33%",
           color: "#B7B7B7",
           margin: 0,
           borderWidth: ".1rem",
@@ -36,14 +35,9 @@ const CurrentDate = () => {
         }}
       />
       <Typography
-        width={"8.7rem"}
-        height={"1.8rem"}
         fontFamily="inherit"
-        fontStyle={"normal"}
         fontWeight={400}
         fontSize={"1.4rem"}
-        lineHeight={"1.8rem"}
-        letterSpacing={0}
         color={"#B7B7B7"}
       >
         {CurrentDate}
@@ -51,7 +45,7 @@ const CurrentDate = () => {
       <Divider
         variant="fullWidth"
         sx={{
-          width: "11.6rem",
+          width: "33%",
           color: "#B7B7B7",
           margin: 0,
           borderWidth: ".1rem",

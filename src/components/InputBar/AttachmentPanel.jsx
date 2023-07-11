@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@mui/material";
+import { Box, Button, IconButton } from "@mui/material";
 import {
   CameraIcon,
   VideoIcon,
@@ -7,48 +7,39 @@ import {
   CornerIcon,
 } from "../../assets/icons/AttachmentPanelIcons";
 
-const icons = [<CameraIcon />, <VideoIcon />, <DocumentIcon />];
+const icons = [
+  { id: "a", icon: <CameraIcon /> },
+  { id: "b", icon: <VideoIcon /> },
+  { id: "c", icon: <DocumentIcon /> },
+];
 
 const AttachmentPanel = () => {
   return (
-    <Box
-      minWidth={"12.4rem"}
-      height={"5.2rem"}
-      position={"absolute"}
-      zIndex={999}
-      right={-5}
-      top={-53}
-    >
+    <Box position={"absolute"} zIndex={999} right={0} top={-53}>
       <Box
-        display={"flex"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
-        width={"12.4rem"}
-        height={"4.4rem"}
         padding={"1.2rem 1.6rem"}
         borderRadius={"99.9rem"}
         boxShadow={"0 -0.1rem .8rem rgba(0, 0, 0, 0.05)"}
         sx={{ backgroundColor: "#008000" }}
       >
-        {icons.map((icon, i) => (
-          <Button
-            key={i}
-            disableRipple
+        {icons.map((value, i) => (
+          <IconButton
+            key={value.id}
             sx={{
-              minWidth: "2rem",
-              height: "2rem",
               padding: 0,
+              marginRight: value.id === "c" ? 0 : "1.5rem",
             }}
           >
-            {icon}
-          </Button>
+            {value.icon}
+          </IconButton>
         ))}
       </Box>
       <Box
         display={"flex"}
         justifyContent={"center"}
-        minWidth={"1.6rem"}
-        minHeight={".8rem"}
+        position={"relative"}
+        top={-1}
+        zIndex={950}
       >
         <CornerIcon />
       </Box>

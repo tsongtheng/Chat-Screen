@@ -10,16 +10,10 @@ function App() {
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
-      // width={"100vw"}
-      // height={"100vh"}
+      width={"100vw"}
       sx={{ backgroundColor: "#1E1E1E" }}
     >
-      <Box
-        // width={"37.5rem"}
-        // height={"71.7rem"}
-        // borderRadius={"3.2rem"}
-        sx={{ backgroundColor: "#FAF9F4" }}
-      >
+      <Box sx={{ backgroundColor: "#FAF9F4" }}>
         <HeadSection />
         <CurrentDate />
         <ChatMessage />

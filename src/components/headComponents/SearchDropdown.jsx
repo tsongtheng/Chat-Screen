@@ -18,12 +18,12 @@ const SearchDropdown = () => {
     <Box
       display={"flex"}
       flexDirection={"column"}
-      width={"15.6rem"}
-      height={"14.4rem"}
+      // width={"15.6rem"}
+      // height={"14.4rem"}
       borderRadius={".8rem"}
       position={"absolute"}
-      right={15}
-      top={90}
+      right={18}
+      top={100}
       zIndex={800}
       sx={{ boxShadow: "0 .4rem .8rem rgba(0, 0, 0, 0.12)" }}
     >
@@ -47,13 +47,11 @@ const SearchDropdown = () => {
                 : id === 3 && "0 0 .8rem .8rem",
           }}
         >
-          <Box width={"2rem"} height={"2rem"} margin={"0 1.2rem 0"}>
-            {icon}
-          </Box>
+          <Box margin={"0 1.2rem 0"}>{icon}</Box>
           <Typography
             variant="body2"
             fontFamily={"inherit"}
-            fontStyle={"normal"}
+            // fontStyle={"normal"}
             fontWeight={600}
             fontSize={"1.4rem"}
             lineHeight={"1.8rem"}
