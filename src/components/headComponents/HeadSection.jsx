@@ -18,6 +18,7 @@ const HeadSection = () => {
       borderBottom={".1rem solid"}
       borderColor={"#E5E5E0"}
       marginBottom={"9.7rem"}
+      marginTop={"2rem"}
       position={"relative"}
     >
       <PageActions />
