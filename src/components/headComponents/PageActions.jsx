@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Typography, Button } from "@mui/material";
+import { Box, Stack, Typography, IconButton } from "@mui/material";
 import {
   BackButtonIcon,
   EditButtonIcon,
@@ -11,48 +11,35 @@ const PageActions = () => {
       flexDirection={"row"}
       justifyContent={"space-between"}
       alignItems={"center"}
-      width={"34.3rem"}
-      height={"3rem"}
-      margin={"0 auto 1.6rem"}
+      width={"100vw"}
+      marginBottom={"1.6rem"}
+      px={"1.3rem"}
     >
-      <Button
+      <Box display={"flex"} flexDirection={"row"} alignItems={"center"}>
+        <IconButton disableRipple>
+          <BackButtonIcon />
+        </IconButton>
+
+        <Typography
+          fontFamily="inherit"
+          fontWeight={700}
+          fontSize={"2.4rem"}
+          letterSpacing={0}
+          color={"#141E0D"}
+        >
+          Trip 1
+        </Typography>
+      </Box>
+
+      <IconButton
         disableRipple
         sx={{
-          minWidth: "2.4rem",
-          height: "2.4rem",
-          margin: ".3rem 0 .3rem",
-          // margin: "3px 12px 3px 0",
-          padding: 0,
-        }}
-      >
-        <BackButtonIcon />
-      </Button>
-
-      <Typography
-        minWidth={"27.5rem"}
-        height={"3rem"}
-        fontFamily="inherit"
-        fontStyle={"normal"}
-        fontWeight={700}
-        fontSize={"2.4rem"}
-        lineHeight={"3rem"}
-        letterSpacing={0}
-        color={"#141E0D"}
-      >
-        Trip 1
-      </Typography>
-
-      <Button
-        disableRipple
-        sx={{
-          minWidth: "2rem",
-          height: "2rem",
-          margin: 0,
-          padding: 0,
+          display: "flex",
+          alignItems: "flex-end",
         }}
       >
         <EditButtonIcon />
-      </Button>
+      </IconButton>
     </Stack>
   );
 };

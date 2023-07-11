@@ -16,27 +16,6 @@ Mobile Resolution width world wide:
 width: 360, 390, 393, 412, 414 [in px]
 height: 780, 800, 844, 873, 896, 915 [in px9]
 */
-
-  @media (max-width: 36rem) {
-    /*200px*/
-    html {
-      font-size: 25%%; /*1rem = 4px, 4/16 = 50%*/
-    }
-  }
-
-  @media all and (max-width: 39rem) {
-    /*250px*/
-    html {
-      font-size: 31.25%; /*1rem = 5px, 5/16 = 50%*/
-    }
-  }
-
-  @media all and (max-width: 41.4rem) {
-    /*400px*/
-    html {
-      font-size: 37.5%; /*1rem = 6px, 6/16 = 50%*/
-    }
-  }
 }
 body {
   box-sizing: border-box;
