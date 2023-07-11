@@ -1,6 +1,4 @@
 import { Box } from "@mui/material";
-import Media from "react";
-import StatusBar from "./components/StatusBar/StatusBar";
 import HeadSection from "./components/headComponents/HeadSection";
 import CurrentDate from "./components/CurrentDate/CurrentDate";
 import ChatMessage from "./components/ChatContent/ChatMessage";
@@ -23,7 +21,6 @@ function App() {
         // borderRadius={"3.2rem"}
         sx={{ backgroundColor: "#FAF9F4" }}
       >
-        {/* <StatusBar /> */}
         <HeadSection />
         <CurrentDate />
         <ChatMessage />
