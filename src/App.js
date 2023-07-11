@@ -3,7 +3,6 @@ import HeadSection from "./components/headComponents/HeadSection";
 import CurrentDate from "./components/CurrentDate/CurrentDate";
 import ChatMessage from "./components/ChatContent/ChatMessage";
 import InputBar from "./components/InputBar/InputBar";
-import HomeIndicator from "./components/HomeIndicator/HomeIndicator";
 
 function App() {
   return (
@@ -17,15 +16,14 @@ function App() {
     >
       <Box
         width={"37.5rem"}
-        height={"76.5rem"}
-        // borderRadius={"3.2rem"}
+        height={"71.7rem"}
+        borderRadius={"3.2rem"}
         sx={{ backgroundColor: "#FAF9F4" }}
       >
         <HeadSection />
         <CurrentDate />
         <ChatMessage />
         <InputBar />
-        <HomeIndicator />
       </Box>
     </Box>
   );
