@@ -17,7 +17,7 @@ width: 360, 390, 393, 412, 414 [in px]
 height: 780, 800, 844, 873, 896, 915 [in px9]
 */
 
-  @media all and (max-width: 36rem) {
+  @media (max-width: 36rem) {
     /*200px*/
     html {
       font-size: 25%%; /*1rem = 4px, 4/16 = 50%*/

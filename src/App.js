@@ -17,7 +17,7 @@ function App() {
       <Box
         width={"37.5rem"}
         height={"71.7rem"}
-        borderRadius={"3.2rem"}
+        // borderRadius={"3.2rem"}
         sx={{ backgroundColor: "#FAF9F4" }}
       >
         <HeadSection />
