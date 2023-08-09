@@ -22,6 +22,7 @@ const CurrentDate = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
       px={"1.6rem"}
+      marginTop={"1rem"}
       marginBottom={"3.2rem"}
     >
       <Divider

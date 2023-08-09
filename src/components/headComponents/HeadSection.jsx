@@ -13,12 +13,11 @@ const HeadSection = () => {
   return (
     <Box
       justifyContent={"space-between"}
-      // width={"37.5rem"}
-      // minHeight={"130px"}
+      height={"16.2vh"}
       borderBottom={".1rem solid"}
       borderColor={"#E5E5E0"}
-      marginBottom={"9.7rem"}
       py={"1.8rem"}
+      sx={{ backgroundColor: "yellow" }}
       position={"relative"}
     >
       <PageActions />

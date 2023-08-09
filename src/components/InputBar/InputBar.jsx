@@ -12,40 +12,42 @@ const InputBar = () => {
   };
 
   return (
-    <Box
-      display={"flex"}
-      flexDirection={"row"}
-      justifyContent={"space-between"}
-      alignItems={"center"}
-      margin={"0 1.6rem 0.8rem"}
-      padding={"1.1rem 1.2rem"}
-      borderRadius={".8rem"}
-      position={"relative"}
-      sx={{
-        backgroundColor: "#FFFFFF",
-        // backgroundColor: "yellow",
-      }}
-    >
-      {panel && <AttachmentPanel />}
+    <Box height={"7vh"} px={"1.6rem"} paddingBottom={"2rem"}>
+      <Box
+        display={"flex"}
+        flexDirection={"row"}
+        justifyContent={"space-between"}
+        alignItems={"center"}
+        padding={"1.1rem 1.2rem"}
+        // margin={"0 1.6rem 2rem"}
+        borderRadius={".8rem"}
+        position={"relative"}
+        sx={{
+          // backgroundColor: "#FFFFFF",
+          backgroundColor: "yellow",
+        }}
+      >
+        {panel && <AttachmentPanel />}
 
-      <CustomizedInputsStyleOverrides />
-      <Box display={"flex"}>
-        <IconButton
-          onClick={handlePanelClick}
-          sx={{
-            padding: 0,
-            marginRight: "1.5rem",
-          }}
-        >
-          <PaperClipIcon />
-        </IconButton>
-        <IconButton
-          sx={{
-            padding: 0,
-          }}
-        >
-          <SendIcon />
-        </IconButton>
+        <CustomizedInputsStyleOverrides />
+        <Box display={"flex"}>
+          <IconButton
+            onClick={handlePanelClick}
+            sx={{
+              padding: 0,
+              marginRight: "1.5rem",
+            }}
+          >
+            <PaperClipIcon />
+          </IconButton>
+          <IconButton
+            sx={{
+              padding: 0,
+            }}
+          >
+            <SendIcon />
+          </IconButton>
+        </Box>
       </Box>
     </Box>
   );

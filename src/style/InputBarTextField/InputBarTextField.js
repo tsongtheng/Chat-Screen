@@ -64,7 +64,7 @@ const CustomizedInputsStyleOverrides = () => {
 
   return (
     <ThemeProvider theme={customTheme(outerTheme)}>
-      <TextField placeholder="Message" />
+      <TextField placeholder="Write a message" />
     </ThemeProvider>
   );
 };

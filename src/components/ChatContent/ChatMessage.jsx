@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import User from "./User";
 import UserPartner from "./UserPartner";
 import { getFormattedData } from "../../api/ChatsData";
+import CurrentDate from "../CurrentDate/CurrentDate";
 
 const ChatMessage = () => {
   const [chats, setChats] = useState([]);
@@ -20,16 +21,14 @@ const ChatMessage = () => {
     <Box
       display={"flex"}
       flexDirection={"column-reverse"}
-      // width={"33.9rem"}
-      // height={"36rem"}
-      padding={"0 1.6rem 2rem"}
+      height={"76.8vh"}
+      padding={"2rem 1.6rem"}
       overflow={"hidden"}
       sx={{
         backgroundColor: "#FAF9F4",
         overflowY: "auto",
         scrollbarWidth: "thin",
         scrollbarColor: "transparent transparent",
-
         "&::-webkit-scrollbar": {
           width: ".5px",
         },
@@ -59,6 +58,7 @@ const ChatMessage = () => {
           <User key={chat.id} message={chat.message} />
         );
       })}
+      <CurrentDate />
     </Box>
   );
 };
