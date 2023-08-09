@@ -19,12 +19,11 @@ const InputBar = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
         padding={"1.1rem 1.2rem"}
-        // margin={"0 1.6rem 2rem"}
         borderRadius={".8rem"}
         position={"relative"}
         sx={{
-          // backgroundColor: "#FFFFFF",
-          backgroundColor: "yellow",
+          backgroundColor: "#FFFFFF",
+          // backgroundColor: "yellow",
         }}
       >
         {panel && <AttachmentPanel />}

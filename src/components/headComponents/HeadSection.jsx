@@ -17,7 +17,7 @@ const HeadSection = () => {
       borderBottom={".1rem solid"}
       borderColor={"#E5E5E0"}
       py={"1.8rem"}
-      sx={{ backgroundColor: "yellow" }}
+      sx={{ backgroundColor: "#FAF9F4" }}
       position={"relative"}
     >
       <PageActions />
