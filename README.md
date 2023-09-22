@@ -8,7 +8,7 @@ The installation button can be found at the right side of the browser address ba
 
 ## Checkout the LINK below to view the Application
 
-https://main--chat-screen-ea8eb4.netlify.app/
+https://chatscreenv1.netlify.app/
 
 ## Getting Started
 
